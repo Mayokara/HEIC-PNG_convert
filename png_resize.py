@@ -1,4 +1,6 @@
 from PIL import Image
+import pathlib
+import glob
 
 image_dir = pathlib.Path('./temp')
 png_path = list(image_dir.glob('**/*.png'))
@@ -10,5 +12,5 @@ def resize_png(image_path, save_path):
 
 for i in png_path:
     m = "./" + str(i)
-    n = './temp/' + str(i.stem) + '.png'
+    n = './resize/' + str(i.stem) + '.png'
     resize_png(m, n)
