@@ -2,7 +2,7 @@ from PIL import Image
 import pathlib
 import glob
 
-image_dir = pathlib.Path('./temp')
+image_dir = pathlib.Path('./png')
 png_path = list(image_dir.glob('**/*.png'))
 
 def resize_png(image_path, save_path):

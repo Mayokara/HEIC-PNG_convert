@@ -22,12 +22,12 @@ def heic_png(image_path, save_path):
 
 # 変換対象のファイルがあるディレクトリ
 # カレントの下のtempディレクトリを指定
-image_dir = pathlib.Path('./temp')
+image_dir = pathlib.Path('./heic')
 # globでディレクトリ内のHEICファイルをリストで取得
 heic_path = list(image_dir.glob('**/*.HEIC'))
 
 # リストのHEICファイルを１個づつPNGへ変換
 for i in heic_path:
     m = "./" + str(i)
-    n = './temp/' + str(i.stem) + '.png'
+    n = './png/' + str(i.stem) + '.png'
     heic_png(m, n)
