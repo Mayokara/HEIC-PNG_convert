@@ -14,3 +14,6 @@ resize
 heicフォルダに元画像を入れればpngフォルダに変換後の画像が保存される。
 画像をリサイズしたい場合はpng_resize.pyを実行すればresizeフォルダに画像が保存される。
 
+参考元:
+[Pythonで指定ディレクトリのHEICファイルをJPEGへ変換する](https://qiita.com/Tak3315/items/c0dc8b4d81ed2a582f22)
+[Python, Pillowで画像を一括リサイズ(拡大・縮小)](https://note.nkmk.me/python-pillow-image-resize/)
